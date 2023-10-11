@@ -7,7 +7,7 @@ env:
   WorkingDirectory: ${{GITHUB.WORKSPACE}}
   BuildNumber: ${{GITHUB.RUN_NUMBER}}
 
-name: HCL AppScan Source
+name: HCL AppScan Source standalone
 on:
   workflow_dispatch
 jobs:
