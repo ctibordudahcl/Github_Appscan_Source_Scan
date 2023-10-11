@@ -16,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Scan SAST
-        shell: pwsh
+        shell: powershell
         run: |
           Invoke-WebRequest -Uri https://raw.githubusercontent.com/ctibordudahcl/Github_Appscan_Source_Scan/main/scripts/appscansrc_create_config_scan_folder.ps1 -OutFile appscansrc_create_config_scan_folder.ps1
           .\appscansrc_create_config_scan_folder.ps1
